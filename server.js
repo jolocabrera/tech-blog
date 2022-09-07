@@ -40,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //back end routes
-// app.use(require('./controllers/'));
+app.use(require('./controllers/'));
 
 
 //start server

@@ -16,7 +16,7 @@ require('dotenv').config
 const sess = {
   secret: process.env.session_secret,
   cookie: {
-    maxAge: 60000
+    maxAge: 600000
   },
   resave: false,
   saveUninitialized: true,

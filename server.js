@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -11,8 +12,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 
 //declare sequelize session
+require('dotenv').config
 const sess = {
-  secret: 'this is my secret',
+  secret: process.env.session_secret,
   cookie: {},
   resave: false,
   saveUninitialized: true,

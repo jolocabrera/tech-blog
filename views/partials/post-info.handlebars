@@ -1,12 +1,12 @@
-<article class="post">
-  <div class="title">
+<article class="post card-body">
+  <div class="title card-title">
     <span><a href="/post/{{id}}">{{title}}</a></span><span
       style="float:right"
     >Posted by {{user.username}} on {{format_date created_at}}</span><br />
     <span style="float:right">{{comments.length}}
       {{format_plural "comment" comments.length}}</span>
   </div>
-  <div class="content">
+  <div class="content card-text">
     <p>{{post_text}}</p>
   </div>
 </article>

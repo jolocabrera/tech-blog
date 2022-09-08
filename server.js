@@ -15,7 +15,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 require('dotenv').config
 const sess = {
   secret: process.env.session_secret,
-  cookie: {},
+  cookie: {
+    maxAge: 60000
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({

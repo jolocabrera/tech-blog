@@ -15,18 +15,28 @@
 
   <body>
     <div class="wrapper">
-      <header>
+      <header class="w">
         <h1>
           <a href="/">The Tech Blog</a>
         </h1>
         <nav>
+          <ul>
+            <li>
           <a href="/">homepage</a>
+            </li>
+            <li>
           <a href="/dashboard">dashboard</a>
+            </li>
           {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">logout</button>
+          <li>
+            <a id="logout" class="btn-no-style">logout</a>
+          </li>
           {{else}}
+          <li>
             <a href="/login">login</a>
+          </li>
           {{/if}}
+          </ul>
         </nav>
       </header>
       <main>

@@ -17,7 +17,7 @@ A CMS-style blog site designed to provide a space for developers to write about 
 Users can sign up for an account and create, edit, and delete blog posts as well as comment on other users blog posts.
 
 ## Preview
-![Alt text](/assets/images/Screenshot.png)
+![Alt text](/public/images/Screenshot%20.png)
 
 ## Website
 
